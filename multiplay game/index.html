@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="game-container">
+    </div>
+    <div class="player-info" >
+      <div>
+        <label for="player-name">Твое имя:</label>
+        <input id="player-name" maxlength="10" type="text" />
+      </div>
+      <div>
+        <button id="player-color" class="button">Новый боец</button>
+      </div>
+    </div>
+    
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script>
+    const firebaseConfig = {
+    apiKey: "AIzaSyCq8EeD8xXkvFrJHjK8HjJv7dK-pk-EERQ",
+    authDomain: "multiplayer-demo-a3203.firebaseapp.com",
+    projectId: "multiplayer-demo-a3203",
+    storageBucket: "multiplayer-demo-a3203.appspot.com",
+    databaseURL: "https://multiplayer-demo-a3203-default-rtdb.europe-west1.firebasedatabase.app",
+    messagingSenderId: "442350335156",
+    appId: "1:442350335156:web:19c0bf9aa53c44121713e1",
+    measurementId: "G-10KB5S221L"
+    };
+
+    
+    firebase.initializeApp(firebaseConfig);
+    </script>
+
+
+    <script src="KeyPressListener.js" defer></script>
+    
+</body>
+</html>
